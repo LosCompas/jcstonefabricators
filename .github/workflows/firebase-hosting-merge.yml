@@ -17,4 +17,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_JCSTONEFABRICATORS_3FF5F }}'
           channelId: live
           projectId: jcstonefabricators-3ff5f
-	  entryPoint: "./nextjs-jcstone"
+          entryPoint: "./nextjs-jcstone"
