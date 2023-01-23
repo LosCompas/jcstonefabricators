@@ -1,6 +1,7 @@
 {
   "hosting": {
     "source": ".",
+    "site": "jcstonefabricators",
     "ignore": [
       "firebase.json",
       "**/.*",
