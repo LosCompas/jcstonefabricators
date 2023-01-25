@@ -1,3 +1,5 @@
+import HomeComponent from '../components/home'
+import Image from 'next/image'
 import Head from 'next/head'
 
 // Import the functions you need from the SDKs you need
@@ -25,6 +27,8 @@ const app = initializeApp(firebaseConfig);
 
 export default function Home() {
   return (
-    <div>Hello World</div>
+    <div>
+		<HomeComponent />
+	</div>
   )
 }
