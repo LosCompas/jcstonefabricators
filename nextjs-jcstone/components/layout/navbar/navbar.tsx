@@ -31,7 +31,7 @@ const NavLink = ({ children, path }: { children: ReactNode, path: string }) => (
     	rounded={'md'}
     	_hover={{
     		textDecoration: 'none',
-      		bg: useColorModeValue('blue.200', 'blue.700'),
+      		bg: useColorModeValue('red.200', 'red.700'),
     }}>
 		<Link href={path}> {children} </Link>
 	</Box>
@@ -90,8 +90,8 @@ export default function Navbar() {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+              {Links.map(({name, path}) => (
+                <NavLink key={path} path={path}>{name}</NavLink>
               ))}
             </Stack>
           </Box>
