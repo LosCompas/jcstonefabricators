@@ -15,3 +15,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_JCSTONEFABRICATORS_3FF5F }}'
           projectId: jcstonefabricators-3ff5f
           entryPoint: "./nextjs-jcstone"
+          node-version: 16

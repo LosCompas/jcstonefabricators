@@ -18,3 +18,4 @@ jobs:
           channelId: live
           projectId: jcstonefabricators-3ff5f
           entryPoint: "./nextjs-jcstone"
+          node-version: 16
