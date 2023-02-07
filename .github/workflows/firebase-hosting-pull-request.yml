@@ -16,3 +16,5 @@ jobs:
           projectId: jcstonefabricators-3ff5f
           entryPoint: "./nextjs-jcstone"
           node-version: 16
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
