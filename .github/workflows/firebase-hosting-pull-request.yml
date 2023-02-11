@@ -8,6 +8,8 @@ jobs:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
       - uses: actions/checkout@v2
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -15,6 +17,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_JCSTONEFABRICATORS_3FF5F }}'
           projectId: jcstonefabricators-3ff5f
           entryPoint: "./nextjs-jcstone"
-        env:
-          FIREBASE_CLI_EXPERIMENTS: webframeworks
-      - run: firebase experiments:enable webframeworks
+      # - run: firebase experiments:enable webframeworks
